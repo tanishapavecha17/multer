@@ -6,6 +6,7 @@ const upload_config = {
     minFileSize: 100 * 1024 ,
     uploadPath : "./uploads",
 };
+
 const storage = multer.diskStorage({
     destination: function(req,file,cb){
         return cb(null,"./uploads")
